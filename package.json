@@ -1,0 +1,33 @@
+{
+  "name": "pelican.ts",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "description": "A API wrapper around the Pelican API",
+  "scripts": {
+    "build": "npx ts-node ./src/createExports.js && tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BothimTV/Pelican.ts.git"
+  },
+  "keywords": [
+    "pelican"
+  ],
+  "author": "Bothim_TV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BothimTV/Pelican.ts/issues"
+  },
+  "homepage": "https://github.com/BothimTV/Pelican.ts#readme",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
